@@ -3,12 +3,12 @@ Like katacoda/docker-http-server but supporting ppc64le
 
 ## Building image
 ```
-sudo docker build -t <userid>/docker-http-server .
+sudo docker build -t <userid>/docker-http-server:ppc64le .
 ```
 
 ## Running image standalone
 ```
-sudo docker run -d --rm -p 3000:3000
+sudo docker run -d --rm -p 3000:3000 doodeck/docker-http-server:ppc64le
 ```
 
 ## Running image swarm
