@@ -1,0 +1,11 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "docker-http-server",
+  "main": "index.js",
+  "repository": "https://github.com/doodeck/docker-http-server",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
