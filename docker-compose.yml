@@ -11,6 +11,11 @@ services:
       mode: replicated
       replicas: 2
 
+  redis:
+    image: redis:alpine@sha256:cfba805e8e322ce58dab2b9b4b858f37f7302e0e2f6cda93544aea5f6b65672a
+    networks:
+      - skynet
+
 networks:
   skynet:
     driver: overlay
