@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  http:
+    image: doodeck/docker-http-server:ppc64le
+    ports:
+      - "3000:3000"
+    networks:
+      - skynet
+    deploy:
+      mode: replicated
+      replicas: 2
+
+networks:
+  skynet:
+    driver: overlay

@@ -18,3 +18,7 @@ sudo docker swarm init
 sudo docker network create -d overlay skynet
 sudo docker service create --name http --network skynet --replicas 2 -p 3000:3000 doodeck/docker-http-server:ppc64le
 ```
+or
+```
+sudo docker stack deploy --compose-file docker-compose.yml http
+```
