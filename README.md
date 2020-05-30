@@ -8,6 +8,7 @@ sudo docker build -t <userid>/docker-http-server:ppc64le .
 
 ## Running image standalone
 ```
+sudo ... start redis server locally here
 sudo docker run -d --rm -p 3000:3000 doodeck/docker-http-server:ppc64le
 ```
 
@@ -16,6 +17,7 @@ sudo docker run -d --rm -p 3000:3000 doodeck/docker-http-server:ppc64le
 ```
 sudo docker swarm init
 sudo docker network create -d overlay skynet
+sudo ... start redis server locally here
 sudo docker service create --name http --network skynet --replicas 2 -p 3000:3000 doodeck/docker-http-server:ppc64le
 ```
 or
