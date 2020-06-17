@@ -10,6 +10,11 @@ sudo zip -9 node_14_1-buster-slim.zip node_14_1-buster-slim.tar
 
 sudo docker pull node:10.13.0-stretch@sha256:ac5cf4042d331acb513efb6edbbb81debd3c44c4992f87d06da8817b3a36df5e
 sudo docker save node:10.13.0-stretch@sha256:ac5cf4042d331acb513efb6edbbb81debd3c44c4992f87d06da8817b3a36df5e -o node_10_13_0-stretch.tar
+sudo zip -9 node_10_13_0-stretch.zip node_10_13_0-stretch.tar
+
+sudo docker pull node:10.13.0-alpine@sha256:bf89495913ed5dcbdbaa5868ebf2624b00d3cbae605769ca2cc164b08c207e3f
+sudo docker save node:10.13.0-alpine@sha256:bf89495913ed5dcbdbaa5868ebf2624b00d3cbae605769ca2cc164b08c207e3f -o node_10_13_0-alpine.tar
+sudo zip -9 node_10_13_0-alpine.zip node_10_13_0-alpine.tar
 
 # both images ibmcom_registry-ppc64le_2_7_1.zip and node_14_1-buster-slim.zip kept here in the folder but deleted
 # still to be found in history
